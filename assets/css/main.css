@@ -75,13 +75,12 @@ input, select, textarea {
 
 ul.project-list {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
 }
   
 ul.project-list li {
 	margin-bottom: 20px;
-	margin-left: 170px;
+	margin-left: 50px;
+	margin-right: 50px;
 	text-align: left;
 }
   
@@ -223,10 +222,9 @@ ul.project-list li a:hover {
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
 			
-			position: absolute;
-			top: 50%;
+			position: relative;
 			padding-bottom: 0.5rem;
-			margin: 0 0 2rem 0;
+			margin: 0 2 2rem 0;
 		}
 
 	h1 {
@@ -241,7 +239,6 @@ ul.project-list li a:hover {
 		font-size: 1.5rem;
 		line-height: 1.4;
 		letter-spacing: 0.3rem;
-		max-width: 600px;
 		text-align: center;
 		
 	}
@@ -728,14 +725,14 @@ ul.project-list li a:hover {
 		}
 
 		body.is-article-visible #bg:after {
-			-moz-transform: scale(1.0825);
-			-webkit-transform: scale(1.0825);
-			-ms-transform: scale(1.0825);
-			transform: scale(1.0825);
-			-moz-filter: blur(0.2rem);
-			-webkit-filter: blur(0.2rem);
-			-ms-filter: blur(0.2rem);
-			filter: blur(0.2rem);
+			-moz-transform: scale(1.08);
+			-webkit-transform: scale(1.08);
+			-ms-transform: scale(1.08);
+			transform: scale(1.08);
+			-moz-filter: blur(0.4rem);
+			-webkit-filter: blur(0.4rem);
+			-ms-filter: blur(0.4rem);
+			filter: blur(0.4rem);
 		}
 
 		body.is-preload #bg:before {
@@ -842,8 +839,8 @@ ul.project-list li a:hover {
 		#header .content {
 			border-style: solid;
 			border-color: #ffffff;
-			border-top-width: 0px;
 			border-bottom-width: 1px;
+			border-radius: 0%;
 			max-width: 100%;
 		}
 
@@ -852,12 +849,12 @@ ul.project-list li a:hover {
 				-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
 				-ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
 				transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-				-moz-transition-delay: 0.25s;
-				-webkit-transition-delay: 0.25s;
-				-ms-transition-delay: 0.25s;
-				transition-delay: 0.25s;
+				-moz-transition-delay: 0.8s;
+				-webkit-transition-delay: 0.8s;
+				-ms-transition-delay: 0.8s;
+				transition-delay: 0.8s;
 				padding: 3rem 2rem;
-				max-height: 40rem;
+				max-height: 10rem;
 				overflow: hidden;
 			}
 
@@ -880,8 +877,8 @@ ul.project-list li a:hover {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			border: solid 1px #6ac4cc;
-			border-radius:15px;
+			border: solid 0px #6ac4cc;
+			border-radius:4px;
 		}
 
 			#header nav ul li {
@@ -895,7 +892,7 @@ ul.project-list li a:hover {
 
 				#header nav ul li a {
 					display: block;
-					min-width: 7.5rem;
+					min-width: 8rem;
 					height: 2rem;
 					line-height: 2rem;
 					padding: 0 1.25rem 0 1.45rem;
@@ -903,27 +900,33 @@ ul.project-list li a:hover {
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
 					border-bottom: 0;
+					border-style: solid;
+					border-radius: 3px;
+					background-color: #ffffff0a;
+					color: #ffffff;
+					transition: background-color 0.2s ease;
 				}
 
 					#header nav ul li a:hover {
-						background-color: rgba(0, 255, 247, 0.042);
-						border: solid 0px rgba(0, 255, 247, 0.042);
-						border-radius:15px;
+						background-color: #ffffff;
+						color: #000000;
 					}
 
 					#header nav ul li a:active {
-						background-color: rgba(0, 255, 247, 0.297);
+						background-color: rgba(255, 255, 255, 0.125);
+						
 					}
-
+					
+		/*middle line*/
 		#header nav.use-middle:after {
 			content: '';
 			display: block;
 			position: absolute;
 			top: 0;
 			left: calc(50% - 1px);
-			width: 1px;
+			width: 0px;
 			height: 100%;
-			background: #ffffff;
+			background: #ffffff1b;
 		}
 
 		#header nav.use-middle ul li.is-middle {
