@@ -6,6 +6,7 @@
 	Edited by Miguel Llanes
 */
 
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -93,7 +94,7 @@ ul.project-list li a {
 	border-radius: 3px;
 	border-color: #ffffff;
 	border-style: solid;
-	background-color: #ffffff09;
+	background-color: #ff000009;
 	color: #ffffff;
 	transition: background-color 0.2s ease;
 	
@@ -127,7 +128,7 @@ ul.project-list li a:hover {
 	}
 
 	body {
-		background: #1b1f22;
+		background: #000000;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -383,7 +384,7 @@ ul.project-list li a:hover {
 		.image:before {
 			pointer-events: none;
 			background-image: url("../../images/overlay.png");
-			background-color: rgba(19, 21, 25, 0.5);
+			background-color: rgba(0, 0, 0, 0.5);
 			border-radius: 4px;
 			content: '';
 			display: block;
@@ -648,7 +649,7 @@ ul.project-list li a:hover {
 
 			ul.icons li a {
 				border-radius: 100%;
-				border: solid 1px #6ac4cc;
+				border: solid 1px #ffffff;
 				display: inline-block;
 				height: 2.15rem;
 				line-height: 2rem;
@@ -657,7 +658,7 @@ ul.project-list li a:hover {
 			}
 
 				ul.icons li a:hover {
-					background-color: rgba(0, 255, 247, 0.081);
+					background-color: rgba(0, 255, 247, 0.566);
 				}
 
 				ul.icons li a:active {
@@ -666,78 +667,20 @@ ul.project-list li a:hover {
 /* BG */
 
 	#bg {
-		-moz-transform: scale(1.0);
-		-webkit-transform: scale(1.0);
-		-ms-transform: scale(1.0);
-		transform: scale(1.0);
-		-webkit-backface-visibility: hidden;
-		position: fixed;
+		-moz-transform: scale(0.95);
+		-webkit-transform: scale(0.95);
+		-ms-transform: scale(0.95);
+		transform: scale(0.95);
+		position: absolute;
 		top: 0;
 		left: 0;
-		width: 100%;
-		height: 100vh;
-		z-index: 1;
+		bottom: 0;
+		right: 0;
 	}
 
-		#bg:before, #bg:after {
-			content: '';
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
-
-		#bg:before {
-			-moz-transition: background-color 2.5s ease-in-out;
-			-webkit-transition: background-color 2.5s ease-in-out;
-			-ms-transition: background-color 2.5s ease-in-out;
-			transition: background-color 2.5s ease-in-out;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto,
- 256px 256px;
-			background-position: center,
- center;
-			background-repeat: no-repeat,
- repeat;
-			z-index: 2;
-		}
-
-		#bg:after {
-			-moz-transform: scale(1.125);
-			-webkit-transform: scale(1.125);
-			-ms-transform: scale(1.125);
-			transform: scale(1.125);
-			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
-			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
-			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
-			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
-			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat;
-			z-index: 1;
-		}
-
-		body.is-article-visible #bg:after {
-			-moz-transform: scale(1.08);
-			-webkit-transform: scale(1.08);
-			-ms-transform: scale(1.08);
-			transform: scale(1.08);
-			-moz-filter: blur(0.4rem);
-			-webkit-filter: blur(0.4rem);
-			-ms-filter: blur(0.4rem);
-			filter: blur(0.4rem);
-		}
-
-		body.is-preload #bg:before {
-			background-color: #000000;
-		}
+	body.is-article-visible #bg {
+		opacity: 0.3;
+	}
 
 /* Wrapper */
 
@@ -877,13 +820,13 @@ ul.project-list li a:hover {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			border: solid 0px #6ac4cc;
+			border: solid 0px #ffffff;
 			border-radius:4px;
 		}
 
 			#header nav ul li {
 				padding-left: 0;
-				border-left: solid 1px #ffffff;
+				border-left: solid 0px #ffffff;
 			}
 
 				#header nav ul li:first-child {
@@ -901,8 +844,8 @@ ul.project-list li a:hover {
 					font-size: 0.8rem;
 					border-bottom: 0;
 					border-style: solid;
-					border-radius: 3px;
-					background-color: #ffffff0a;
+					border-radius: 1px;
+					background-color: #ffffff15;
 					color: #ffffff;
 					transition: background-color 0.2s ease;
 				}
@@ -926,7 +869,7 @@ ul.project-list li a:hover {
 			left: calc(50% - 1px);
 			width: 0px;
 			height: 100%;
-			background: #ffffff1b;
+			background: #ffffff;
 		}
 
 		#header nav.use-middle ul li.is-middle {
@@ -1088,8 +1031,8 @@ ul.project-list li a:hover {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(0, 255, 247, 0.042);
-			border: solid 1px #6ac4cc;
+			background-color: rgba(0, 191, 255, 0.068);
+			border: solid 1px #00fbff96;
 			border-radius: 4px;
 			opacity: 0;
 		}
