@@ -229,6 +229,11 @@ ul.project-list li a:hover {
 		}
 
 	h1 {
+		background-image: repeating-radial-gradient(closest-side at 15px 15px, #00ddff, #067eff,#308aff);
+		/*background-image: linear-gradient(to top, #ffffff, #1b7aff);*/
+		color: transparent;
+		background-clip: text;
+		-webkit-background-clip: text;
 		font-size: 2.25rem;
 		line-height: 1.3;
 		letter-spacing: 0.5rem;
@@ -649,7 +654,7 @@ ul.project-list li a:hover {
 
 			ul.icons li a {
 				border-radius: 100%;
-				border: solid 1px #ffffff;
+				border: solid 1px #ffffff1c;
 				display: inline-block;
 				height: 2.15rem;
 				line-height: 2rem;
@@ -658,11 +663,12 @@ ul.project-list li a:hover {
 			}
 
 				ul.icons li a:hover {
-					background-color: rgba(0, 255, 247, 0.566);
+					background-color: rgb(255, 255, 255);
+					color: #000000;
 				}
 
 				ul.icons li a:active {
-					background-color: rgba(0, 255, 247, 0.297);
+					background-color: rgba(144, 144, 144, 0.297);
 				}
 /* BG */
 
@@ -754,10 +760,6 @@ ul.project-list li a:hover {
 		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 		max-width: 100%;
 		text-align: center;
 	}
@@ -839,6 +841,7 @@ ul.project-list li a:hover {
 					height: 2rem;
 					line-height: 2rem;
 					padding: 0 1.25rem 0 1.45rem;
+					margin-left: 10px;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
@@ -966,7 +969,7 @@ ul.project-list li a:hover {
 
 					#header nav ul li {
 						border-left: 0;
-						border-top: solid 1px #ffffff;
+						margin-top: 10px;
 					}
 
 						#header nav ul li:first-child {
@@ -1032,7 +1035,7 @@ ul.project-list li a:hover {
 			width: 40rem;
 			max-width: 100%;
 			background-color: rgba(0, 191, 255, 0.068);
-			border: solid 1px #00fbff96;
+			border: solid 1px #00fbff50;
 			border-radius: 4px;
 			opacity: 0;
 		}
